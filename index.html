@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./src/css/reset.css" />
+		<link rel="stylesheet" href="./src/css/header.css" />
+		<link rel="stylesheet" href="./src/css/style.css" />
+		<link rel="stylesheet" href="./src/css/footer.css" />
+		<link rel="stylesheet" href="./src/css/responsive.css" />
+		<title>Encriptador</title>
+	</head>
+	<body>
+		<header>
+			<figure>
+				<img src="./src/img/logo-alura.png" alt="Logo da Alura" />
+			</figure>
+			<figcaption>#challengeonedecodificador5</figcaption>
+		</header>
+		<main>
+			<section>
+				<h1>Encriptador</h1>
+				<h6>
+					<figure>
+						<img
+							src="./src/img/Vector.png"
+							alt="Imagem com um ponto de exclamação" />
+					</figure>
+					<figcaption>Apenas letras minúsculas e sem acento.</figcaption>
+				</h6>
+			</section>
+			<section>
+				<label for="input">Texto:</label><br />
+				<textarea
+					id="input"
+					style="resize: none"
+					placeholder="Digite seu texto"
+					rows="9"></textarea>
+				<button onclick="encrypt()">Criptografar</button>
+				<button onclick="decrypt()">Descriptografar</button>
+				<div>
+					<label for="output">Resultado:</label>
+					<textarea
+						class="output"
+						id="output"
+						style="resize: none"
+						rows="9"></textarea>
+					<button onclick="copyToClipboard()">Copiar</button>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<p>&copy;Desenvolvido por Alan Fabrício</p>
+			<nav>
+				<a
+					class="fa-brands fa-linkedin"
+					href="https://www.linkedin.com/in/alanfabr%C3%ADcio/"
+					target="_blank"></a>
+				<a
+					class="fa-brands fa-github"
+					href="https://github.com/AlanFabricioBarbosa"
+					target="_blank"></a>
+			</nav>
+		</footer>
+
+		<script src="./src/js/index.js"></script>
+		<script
+			src="https://kit.fontawesome.com/6878fb5287.js"
+			crossorigin="anonymous"></script>
+	</body>
+</html>
